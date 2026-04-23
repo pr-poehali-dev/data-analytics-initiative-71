@@ -45,12 +45,15 @@ export function Footer() {
             <h4 className="text-sm font-medium mb-4">Связь</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="tel:+78362000000" className="hover:text-foreground transition-colors">
-                  Позвонить нам
+                <a href="tel:+78352632527" className="hover:text-foreground transition-colors">
+                  +7 (8352) 63-25-27
                 </a>
               </li>
               <li>
-                <span>Йошкар-Ола</span>
+                <span>Открыто до 18:00</span>
+              </li>
+              <li>
+                <span>ул. Текстильщиков, 12, Чебоксары</span>
               </li>
               <li>
                 <a href="#" className="hover:text-foreground transition-colors">
