@@ -1,30 +1,31 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Shirt, Shield, Scissors, Star } from "lucide-react"
+import Icon from "@/components/ui/icon"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Форменная одежда",
+    description: "Пошив формы для охраны, медицины, транспорта, госструктур и корпоративных клиентов. Строго по стандартам, точно по меркам.",
+    icon: "Shield",
   },
   {
-    title: "Коммерческие объекты",
+    title: "Изделия из меха",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Шубы, жилеты, воротники и шапки из норки, песца, лисы и каракуля. Реставрация и перешив меховых изделий.",
+    icon: "Star",
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Изделия из кожи",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Кожаные куртки, пальто, жилеты и аксессуары. Индивидуальный пошив из натуральной и экологичной кожи на любой вкус.",
+    icon: "Scissors",
   },
   {
-    title: "Градостроительство",
+    title: "Индивидуальный пошив",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Любой сложности изделия под заказ: от рабочей спецодежды до эксклюзивных вещей. Работаем с физическими лицами и организациями.",
+    icon: "Shirt",
   },
 ]
 
@@ -59,18 +60,17 @@ export function Expertise() {
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Мастерство</HighlightedText>, проверенное
             <br />
-            практикой
+            годами
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Каждый заказ выполняется вручную профессиональными портными с многолетним опытом в пошиве форменной одежды, меха и кожи.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
           {expertiseAreas.map((area, index) => {
-            const Icon = area.icon
             return (
               <div
                 key={area.title}
@@ -91,7 +91,7 @@ export function Expertise() {
                     transitionDelay: `${index * 150}ms`,
                   }}
                 >
-                  <Icon className="w-10 h-10 mb-4 text-foreground" strokeWidth={1.25} />
+                  <Icon name={area.icon} fallback="Shirt" className="w-10 h-10 mb-4 text-foreground" strokeWidth={1.25} />
                 </div>
                 <h3 className="text-xl font-medium mb-4">{area.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{area.description}</p>
