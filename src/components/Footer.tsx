@@ -6,7 +6,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <span className="font-semibold tracking-widest text-lg uppercase">ЗИМА</span>
+              <img src="https://cdn.poehali.dev/projects/d58f3703-a61f-458f-b63e-c7593897c218/bucket/a5f46ecb-4696-47bc-bee6-6c15834003e6.png" alt="Ателье Зима" className="h-14 w-auto" />
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
               Ателье по пошиву форменной одежды и изделий из меха и кожи. Качество, проверенное годами.
