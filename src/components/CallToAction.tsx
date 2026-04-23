@@ -18,7 +18,7 @@ export function CallToAction() {
             Свяжитесь с нами — обсудим детали заказа, снимем мерки и предложим лучшие материалы. Работаем как с частными клиентами, так и с организациями.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
               href="tel:+78352632527"
               className="inline-flex items-center justify-center gap-3 bg-primary-foreground text-foreground px-8 py-4 text-sm tracking-wide hover:bg-primary-foreground/90 transition-colors duration-300 group"
@@ -33,6 +33,18 @@ export function CallToAction() {
               Узнать о нас
             </a>
           </div>
+
+          <div className="w-full overflow-hidden rounded-lg" style={{ height: "360px" }}>
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=47.272728%2C56.143785&z=16&pt=47.272728,56.143785,pm2rdm&text=%D1%83%D0%BB.%20%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B8%D0%BB%D1%8C%D1%89%D0%B8%D0%BA%D0%BE%D0%B2%2C%2012%2C%20%D0%A7%D0%B5%D0%B1%D0%BE%D0%BA%D1%81%D0%B0%D1%80%D1%8B"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              title="Карта ателье Зима"
+              allowFullScreen
+            />
+          </div>
+          <p className="text-primary-foreground/50 text-sm mt-4">ул. Текстильщиков, 12, Чебоксары · Открыто до 18:00</p>
         </div>
       </div>
     </section>
