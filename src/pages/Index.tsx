@@ -6,10 +6,12 @@ import { Expertise } from "../components/Expertise"
 import { FAQ } from "../components/FAQ"
 import { CallToAction } from "../components/CallToAction"
 import { Footer } from "../components/Footer"
+import { Snowflakes } from "../components/Snowflakes"
 
 export default function Index() {
   return (
     <main className="min-h-screen">
+      <Snowflakes />
       <Header />
       <Hero />
       <Philosophy />
